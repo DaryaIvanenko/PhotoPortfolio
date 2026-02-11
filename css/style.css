@@ -1,18 +1,100 @@
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-    line-height: 1.6;
+  font-family: 'Playfair Display', serif;
+  background: #ffffff;
+  color: #333333;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+
+
+
+.hero {
+  height: 900px;
+  background: url("ph.jpg") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.hero-title {
+  font-size: 56px;
+  line-height: 75px;
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 15px 40px;
+  background: #333333;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+.hero-btn:hover {
+  background: #000000;
+}
+
+
+
+.portfolio {
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-grid {
+  width: 900px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.portfolio-item {
+  height: 119px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+}
+
+
+
+.portfolio-item:nth-child(1) {
+  background-image: url("ph1.jpg");
+}
+
+.portfolio-item:nth-child(2) {
+  background-image: url("ph2.jpg");
+}
+
+.portfolio-item:nth-child(3) {
+  background-image: url("ph3.jpg");
 }

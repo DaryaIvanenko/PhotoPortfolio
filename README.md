@@ -11,5 +11,5 @@
 - Figma
 
 ## Ссылки
-Figma: https://www.figma.com/site/HDj9wiKrSZiWas0CBpZxlo/PhotoPortfolio?node-id=0-1&t=GsC5ppFtEGVyzuIi-1
+Figma: https://www.figma.com/site/HDj9wiKrSZiWas0CBpZxlo/PhotoPortfolio
 GitHub: https://github.com/britunass/PhotoPortfolio
