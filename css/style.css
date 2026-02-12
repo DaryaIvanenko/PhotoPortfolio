@@ -1,8 +1,11 @@
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -11,90 +14,86 @@ body {
   color: #333333;
 }
 
-
-
+/* ===== HERO ===== */
 
 .hero {
-  height: 900px;
-  background: url("ph.jpg") center/cover no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   position: relative;
+  height: 900px;
+  background: url("../images/ph1.png") center/cover no-repeat;
 }
 
-.hero-overlay {
+/* затемнение */
+.hero::after {
+  content: "";
   position: absolute;
   inset: 0;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255,255,255,0.5);
 }
 
-.hero-content {
-  position: relative;
+/* Заголовок */
+.hero-title {
+  position: absolute;
+  right: 100px;
+  bottom: 60px;
+  font-size: 56px;
   z-index: 2;
 }
 
+/* Подзаголовок */
 .hero-subtitle {
+  position: absolute;
+  right: 100px;
+  bottom: 130px;
   font-size: 18px;
-  line-height: 24px;
-  margin-bottom: 10px;
+  z-index: 2;
 }
 
-.hero-title {
-  font-size: 56px;
-  line-height: 75px;
-  margin-bottom: 30px;
-}
-
+/* Кнопка */
 .hero-btn {
-  display: inline-block;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding: 15px 40px;
-  background: #333333;
-  color: #ffffff;
-  text-decoration: none;
+  background: white;
   border-radius: 8px;
+  text-decoration: none;
+  color: #333;
   font-size: 18px;
+  z-index: 2;
   transition: 0.3s ease;
 }
 
 .hero-btn:hover {
-  background: #000000;
+  background: #333;
+  color: white;
 }
 
-
+/* ===== PORTFOLIO ===== */
 
 .portfolio {
-  padding: 100px 0;
-  display: flex;
-  justify-content: center;
-}
-
-.portfolio-grid {
   width: 900px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  margin: 80px auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .portfolio-item {
+  width: 227px;
   height: 119px;
   background-size: cover;
   background-position: center;
   border-radius: 6px;
 }
 
-
-
 .portfolio-item:nth-child(1) {
-  background-image: url("ph1.jpg");
+  background-image: url("../images/ph4.png");
 }
 
 .portfolio-item:nth-child(2) {
-  background-image: url("ph2.jpg");
+  background-image: url("../images/ph5.png");
 }
 
 .portfolio-item:nth-child(3) {
-  background-image: url("ph3.jpg");
+  background-image: url("../images/ph6.png");
 }
